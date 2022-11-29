@@ -1,13 +1,21 @@
 window.onload = function(){
     let body = document.querySelector('body');
     let moviesListTitulo = document.querySelector('.moviesListTitulo');
+    let logo = document.querySelector('.logo_DH')
 
-    let modo = confirm('Desea modo oscuro');
+
+    logo.addEventListener('mouseover',function(){
+        body.style.backgroundColor = '#7f7f7f'
+        body.classList.add('fondoMoviesList');
+    })
+
+    // ANULO LO IMPLEMENTADO EN PRACTICO ANTERIOR
+/*     let modo = confirm('Desea modo oscuro');
     if(modo){
         body.style.backgroundColor = '#7f7f7f'
         body.classList.add('fondoMoviesList');
     }
-    
+ */    
     console.log(body);
     moviesListTitulo.innerHTML = 'LISTADO DE PELÍCULAS';
     moviesListTitulo.style.color ='white';

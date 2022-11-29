@@ -7,6 +7,7 @@ window.onload = function(){
     let enlace = document.querySelector('a');
     let logo = document.querySelector('.logoDH')
     let menu = document.querySelector('#menu')
+ 
     
     let nombre = prompt('Ingrese su nombre');
     console.log(nombre);
@@ -41,5 +42,6 @@ window.onload = function(){
         menu.style.left = '-200px'
         console.log('estamos saliendo')
     })
-
+    
+    
     }

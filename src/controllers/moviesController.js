@@ -13,6 +13,7 @@ const Actors = db.Actor;
 
 const moviesController = {
     'list': (req, res) => {
+        console.log('------------------------ llegando ---------------------')
         db.Movie.findAll({
             include: ['genre']
         })
